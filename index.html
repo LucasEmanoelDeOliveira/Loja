@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="header-container">
+            <img src="https://media.discordapp.net/attachments/1248403501013270529/1297249515681611866/1729358774701.png?ex=67153d42&is=6713ebc2&hm=f5ad0b244d66f7a857f02a4f8ffc60898f0d1b261a985b2ebb8130c139efb7bb&=&format=webp&quality=lossless&width=631&height=628" alt="LOGO NOAH STORE">
+            <h1>Noah Store</h1>
+            <div id="cart-container">
+                <img src="https://cdn-icons-png.flaticon.com/128/1170/1170627.png" alt="cart">
+                <h1 id="quantityOfItensLabel">0</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="main-container">
+            <div id="main-row">
+                <h1>Loja Flee the Facility (FTF)</h1>
+            </div>
+            <div id="main-products">
+                <h1>Busque seu Set FTF :</h1>
+                <input type="text" id="searchInput" placeholder="🔍 | Buscar produtos..." oninput="filterProducts()">
+            </div>
+            <div id="products">
+            </div>
+            <div id="pagination">
+                <button id="prevPage" disabled><<</button>
+                <span id="pageInfo"></span>
+                <button id="nextPage">>></button>
+            </div>
+        </div>
+    </main>
+
+    <div id="sidebar">
+        <button id="closeSidebar">X</button>
+        <h2>Carrinho</h2>
+        <div id="cartItems">
+        </div>
+    </div>
+
+    <div id="notification" class="notification">Produto adicionado ao carrinho!</div>
+    <script src="script.js"></script>
+    <audio id="Notification" src="Notfication.mp3"></audio>
+</body>
+</html>
